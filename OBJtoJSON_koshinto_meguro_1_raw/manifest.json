@@ -1,0 +1,120 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/anno.jsonld",
+        "http://iiif.io/api/presentation/3/context.json"
+    ],
+    "type": "Manifest",
+    "id": "http://www.kanzaki.com/works/2018/threed/nefertiti-manifest.json",
+    "label": {
+        "en": [
+            "Bust of Queen Nefertiti"
+        ],
+        "ja": [
+            "ネフェルティティの胸像"
+        ]
+    },
+    "description": {
+        "en": [
+            "limestone and stucco, 1345 BC: by Thutmose, ancient Egypt. Presented at Neues Museum, Berlin"
+        ],
+        "ja": [
+            "紀元前1345年のエジプトでつくられた胸像。ベルリン新博物館蔵"
+        ]
+    },
+    "requiredStatement": {
+      "label": { "@none": [ "Attribution" ] },
+      "value": { "@none": [ "3D models by Nefertiti Hack, converted to Threejs data by UniversalViewer example site." ] }
+    },
+    "metadata": [
+        {
+            "label": {"@none": ["Nefertiti Hack"]}, 
+            "value": {"@none": ["http://nefertitihack.alloversky.com/"]}
+        }
+    ],
+    "items": [
+        {
+            "type": "Canvas",
+            "id": "http://www.kanzaki.com/works/2018/threed/nefertiti/canvas/1",
+            "label": {
+                "@none": [
+                    "Three D canvas"
+                ]
+            },
+            "width": 800,
+            "height": 700,
+            "items": [
+                {
+                    "id": "http://www.kanzaki.com/works/2018/threed/nefertiti/content/media-1-1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "http://www.kanzaki.com/works/2018/threed/nefertiti/media/1-1-1",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "http://www.kanzaki.com/works/2018/threed/nefertiti/canvas/1",
+                            "body": {
+                                "type": "PhysicalObject",
+                                "id": "https://shinodakosuke.github.io/iiif-3d-v2/OBJtoJSON_koshinto_meguro_1_raw/OBJtoJSON_koshinto_meguro_1_raw.json",
+                                "format": "application/vnd.threejs+json"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "http://www.kanzaki.com/works/2018/threed/nefertiti/content/annot-1-1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "http://www.kanzaki.com/works/2018/threed/nefertiti/annot/1-1-1",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": {
+                                "source": "http://www.kanzaki.com/works/2018/threed/nefertiti/canvas/1",
+                                "selector": {
+                                    "type": "3DSelector",
+                                    "value": "0.55,0,1.2"
+                                }
+                            },
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "This is her left ear"
+                            }
+                        },
+                        {
+                            "id": "http://www.kanzaki.com/works/2018/threed/nefertiti/annot/1-1-1",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": {
+                                "source": "http://www.kanzaki.com/works/2018/threed/nefertiti/canvas/1",
+                                "selector": {
+                                    "type": "3DSelector",
+                                    "value": "-1.6,-2.2,-0.9"
+                                }
+                            },
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "There supposed to be her right shoulder"
+                            }
+                        },
+                        {
+                            "id": "http://www.kanzaki.com/works/2018/threed/nefertiti/annot/1-1-1",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": {
+                                "source": "http://www.kanzaki.com/works/2018/threed/nefertiti/canvas/1",
+                                "selector": {
+                                    "type": "3DSelector",
+                                    "value": "-0.8,2.3,0.6"
+                                }
+                            },
+                            "body": {
+                                "type": "TextualBody",
+                                "value": "The ribbon on the Nefertiti cap crown"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
